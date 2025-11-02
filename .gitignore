@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+artifacts/
+cache/
+types/
+deployments/
+fhevmTemp/
+
+# Production
+*.log
+*.pem
+*.env
+*.env*.local
+
+# Misc
+.DS_Store
+*.tsbuildinfo
+.vercel/
+tmp/
+coverage.json
+
+# Lock files (optional - some teams commit these)
+# pnpm-lock.yaml
+# yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+
