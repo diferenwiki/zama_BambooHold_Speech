@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #0f766e;
+    --color-accent: #f59e0b;
+    --color-neutral: #6b7280;
+    --color-safe: #10b981;
+    --color-caution: #fbbf24;
+    --color-danger: #ef4444;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text-primary: #111827;
+    --color-text-secondary: #6b7280;
+  }
+
+  .dark {
+    --color-primary: #14b8a6;
+    --color-accent: #fcd34d;
+    --color-neutral: #9ca3af;
+    --color-safe: #34d399;
+    --color-caution: #fcd34d;
+    --color-danger: #f87171;
+    --color-background: #1f2937;
+    --color-surface: #111827;
+    --color-text-primary: #f9fafb;
+    --color-text-secondary: #9ca3af;
+  }
+
+  body {
+    @apply bg-[var(--color-background)] text-[var(--color-text-primary)];
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-lg font-medium hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed transition-all;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-neutral-200 dark:bg-neutral-700 text-[var(--color-text-primary)] rounded-lg font-medium hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed transition-all;
+  }
+
+  .card {
+    @apply bg-[var(--color-surface)] rounded-lg shadow-subtle p-6 border border-gray-200 dark:border-gray-700;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-[var(--color-text-primary)] focus:ring-2 focus:ring-primary focus:border-transparent outline-none;
+  }
+}
+
