@@ -1,7 +1,6 @@
 /**
  * FHEVM Instance Management
  * Creates and manages FHEVM instances for encryption/decryption
- * Updated to support latest FHEVM relayer SDK version
  */
 
 import { loadRelayerSDK } from "./RelayerSDKLoader";
